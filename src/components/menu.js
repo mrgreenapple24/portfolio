@@ -74,7 +74,7 @@ const StyledHamburgerButton = styled.button`
       top: ${props => (props.menuOpen ? `0` : `-10px`)};
       opacity: ${props => (props.menuOpen ? 0 : 1)};
       transition: ${({ menuOpen }) =>
-    menuOpen ? 'var(--ham-before-active)' : 'var(--ham-before)'};
+        menuOpen ? 'var(--ham-before-active)' : 'var(--ham-before)'};
     }
     &:after {
       width: ${props => (props.menuOpen ? `100%` : `80%`)};
@@ -145,13 +145,6 @@ const StyledSidebar = styled.aside`
       width: 100%;
       padding: 3px 20px 20px;
     }
-  }
-
-  .resume-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    padding: 18px 50px;
-    margin: 10% auto 0;
-    width: max-content;
   }
 `;
 
@@ -265,10 +258,6 @@ const Menu = () => {
                 ))}
               </ol>
             )}
-
-            <a href="/resume.pdf" className="resume-link">
-              Resume
-            </a>
           </nav>
         </StyledSidebar>
       </div>

@@ -97,18 +97,3 @@ PostTemplate.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
 };
-
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        description
-        date
-        slug
-        tags
-      }
-    }
-  }
-`;
